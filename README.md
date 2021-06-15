@@ -30,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 b)	app > res > layout > activity_main.xml
-
+Print no repositório.
 
 c)	app > manifests > AndroidManifest.xml
+
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myfirstapp">
@@ -55,10 +56,10 @@ c)	app > manifests > AndroidManifest.xml
 
 </manifest>
 
-
-
 d)	Gradle Scripts > build.gradle
+
 Project:
+
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
@@ -84,15 +85,6 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-
-
-
-
-
-
-
-
 
 
 Module:
@@ -138,15 +130,9 @@ dependencies {
 }
 
 
-
-
-
-
-
-
 5)	Execute o guia 2, executando seu app.
 a)	Cole aqui um print do aplicativo sendo executado em um simulador.
- 
+ Print no repositório.
 
 6)	Execute o tutorial de Criar um IU
 a)	Cole um print da primeira construção
