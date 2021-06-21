@@ -140,6 +140,20 @@ b)	Cole um print do código gerado
 c)	Cole um print da execução final da sua interface.
 
 7)	Execute o tutorial Criar uma Nova Atividade e mostre o aplicativo rodando.
-8)	O que mudou? Como as atividades se relacionam?
-9)	Quais recursos estão disponíveis e foram utilizados?
-10)	 Qual a configuração do seu arquivo de Manifesto e Por quê?
+8)	O que mudou? Quando for apertado o Botão "Send" aparecerá um texto referente ao que foi inserido
+9)	Como as atividades se relacionam? A atividade filha só aparecerá quando for clicado o botão "Send"
+10)	Quais recursos estão disponíveis e foram utilizados? OnClick
+11)	 Qual a configuração do seu arquivo de Manifesto e Por quê?
+	    <activity android:name=".DisplayMessageActivity"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MainActivity" />
+            </intent-filter>
+        </activity>
+        
+      Isto é para fazer com que a activity filha declare a activity pai e consiga retornar ela utilizando botão "Up".
